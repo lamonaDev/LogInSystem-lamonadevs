@@ -1,0 +1,81 @@
+body {
+    background-color: #fff3e0;
+    /* Warm cream background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-card {
+    background-color: #ffffff;
+    /* White card background */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    height: 270px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.user-card-header {
+    background: linear-gradient(135deg, #ff7043, #f4511e);
+    /* Warm orange gradient */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.user-card-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.user-card-body {
+    padding: 20px;
+    height: 100%;
+    background-color: #fff8e1;
+    /* Light warm yellow */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #4a2c0b;
+    /* Deep brown text */
+}
+
+.user-info i {
+    font-size: 1.2rem;
+    color: #f4511e;
+    /* Bright orange icons */
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.user-info span {
+    font-size: 0.95rem;
+}
+
+.logout-btn {
+    background-color: #d84315;
+    /* Deep orange button */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #ffffff;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #bf360c;
+    /* Darker orange on hover */
+}
+
+.logout-btn i {
+    margin-left: 5px;
+}

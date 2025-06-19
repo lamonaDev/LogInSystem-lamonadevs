@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/userLogIn.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Log-In Page</title>
+</head>
+<body>
+    <div class="modal fade zoom" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertModalLabel">Alert</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Message will be inserted here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .modal.zoom .modal-dialog {
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 0.3s ease-out;
+        }
+        .modal.zoom.show .modal-dialog {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+    <section class="user" id="userInterface">
+    </section>
+    <main id="main" class="">
+        <div class="container" id="mainContainer">
+                    <div class="forms">
+                        <div class="form login">
+                            <span class="title">Login</span>
+                            <form action="#" id="mainLoginForm">
+                                <div class="input-field">
+                                    <input type="text" id="loginNameInput" placeholder="Enter your email" required />
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" id="loginPasswordInput" class="password"
+                                        placeholder="Enter your password" required />
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <div class="checkbox-content">
+                                        <input type="checkbox" id="logCheck" />
+                                        <label for="logCheck" class="text">Remember me</label>
+                                    </div>
+                                    <a href="#" class="text">Forgot password?</a>
+                                </div>
+                                <div class="input-field button">
+                                    <input type="button" id="mainLoginFormButton" value="Login" />
+                                </div>
+                            </form>
+                            <div class="login-signup">
+                                <span class="text">Not a member?
+                                    <a href="#" class="text signup-link">Signup Now</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form signup">
+                            <span class="title">Registration</span>
+                            <form action="#" id="mainSignupForm">
+                                <div class="input-field">
+                                    <input type="text" id="signupNameInput" placeholder="Enter your name" required />
+                                    <i class="fa-solid fa-signature"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" id="signupEmailInput" placeholder="Enter your email" required />
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" id="signupPasswordInput" class="password"
+                                        placeholder="Create a password" required />
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <div class="input-field">
+                                    <input type="password" id="signupRePasswordInput" class="password"
+                                        placeholder="Confirm a password" required />
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                                <div class="checkbox-text">
+                                    <div class="checkbox-content">
+                                        <input type="checkbox" id="termCon" />
+                                        <label for="termCon" class="text">I accepted all terms and conditions</label>
+                                    </div>
+                                </div>
+                                <div class="input-field button">
+                                    <input type="button" id="mainSignupFormButton" value="Signup" />
+                                </div>
+                            </form>
+                            <div class="login-signup">
+                                <span class="text">Already a member?
+                                    <a href="./pages/signup.html" class="text login-link">Login Now</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/login.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.min.js.map"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
